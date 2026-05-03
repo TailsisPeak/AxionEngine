@@ -131,7 +131,7 @@ PRs welcome — the architecture is intentionally Unity-shaped to make migration
 
 ## Companion: Silica Gel IDE
 
-`/silica-gel-ide` is a separate Visual Studio solution containing **Silica Gel**, an Avalonia-based IDE built specifically for editing `.gel` and `.sil` files with syntax highlighting, completion, theming, and one-click language conversion. See `silica-gel-ide/README.md`.
+`/silicagel` is a separate Visual Studio solution containing **Silica Gel**, an Avalonia-based IDE built specifically for editing `.gel` and `.sil` files with syntax highlighting, completion, theming, and one-click language conversion. See `silicagel/README.md`.
 
 ---
 
