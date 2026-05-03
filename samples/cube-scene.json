@@ -1,0 +1,77 @@
+{
+  "name": "Cube Sample",
+  "roots": [
+    {
+      "name": "Sun",
+      "tag": "Untagged",
+      "layer": 0,
+      "active": true,
+      "transform": {
+        "position": { "x": 0, "y": 5, "z": 0 },
+        "rotation": { "x": -45, "y": 30, "z": 0 },
+        "scale":    { "x": 1, "y": 1, "z": 1 }
+      },
+      "components": [
+        {
+          "type": "Axion.Engine.LightComponent, Axion.Engine",
+          "data": { "type": "Directional", "color": { "r": 1, "g": 0.95, "b": 0.85 }, "intensity": 1 }
+        }
+      ]
+    },
+    {
+      "name": "MainCamera",
+      "tag": "MainCamera",
+      "layer": 0,
+      "active": true,
+      "transform": {
+        "position": { "x": 3, "y": 2, "z": 5 },
+        "rotation": { "x": -15, "y": 30, "z": 0 },
+        "scale":    { "x": 1, "y": 1, "z": 1 }
+      },
+      "components": [
+        {
+          "type": "Axion.Engine.CameraComponent, Axion.Engine",
+          "data": { "fov": 60, "near": 0.1, "far": 1000, "isMain": true }
+        }
+      ]
+    },
+    {
+      "name": "SpinningCube",
+      "tag": "Untagged",
+      "layer": 0,
+      "active": true,
+      "transform": {
+        "position": { "x": 0, "y": 0, "z": 0 },
+        "rotation": { "x": 0, "y": 0, "z": 0 },
+        "scale":    { "x": 1, "y": 1, "z": 1 }
+      },
+      "components": [
+        {
+          "type": "Axion.Engine.MeshRendererComponent, Axion.Engine",
+          "data": { "primitive": "cube", "color": { "r": 0.55, "g": 0.78, "b": 0.95 } }
+        },
+        {
+          "type": "Axion.Engine.ScriptComponent, Axion.Engine",
+          "data": { "script": "samples/cube.gel" }
+        }
+      ]
+    },
+    {
+      "name": "Ground",
+      "tag": "Untagged",
+      "layer": 0,
+      "active": true,
+      "transform": {
+        "position": { "x": 0, "y": -2, "z": 0 },
+        "rotation": { "x": 0, "y": 0, "z": 0 },
+        "scale":    { "x": 8, "y": 1, "z": 8 }
+      },
+      "components": [
+        {
+          "type": "Axion.Engine.MeshRendererComponent, Axion.Engine",
+          "data": { "primitive": "quad", "color": { "r": 0.2, "g": 0.22, "b": 0.25 } }
+        }
+      ]
+    }
+  ]
+}

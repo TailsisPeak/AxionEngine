@@ -1,0 +1,13 @@
+# spinner.gel — drop on any GameObject to make it spin and hop on space.
+
+func start() {
+    log.info("spinner ready on " + gameObject.name)
+}
+
+func loop() {
+    transform.rotate(0, 90 * time.delta, 0)
+
+    if input.keyDown("space") {
+        transform.translate(0, 1, 0)
+    }
+}
