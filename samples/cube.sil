@@ -1,0 +1,10 @@
+# Axion sample script — Silica
+# Same behavior as cube.gel — spins the GameObject around Y.
+
+decimal speed = 90.0
+
+func start()
+    print("cube spawned at " + Transform.Position)
+
+func loop()
+    Transform.Rotate(Vec.V(0, speed * Time.DeltaTime, 0))

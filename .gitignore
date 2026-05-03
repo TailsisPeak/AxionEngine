@@ -1,0 +1,14 @@
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.cache
+*.log
+[Tt]emp/
+[Bb]uild/
+publish/
+artifacts/
+.idea/
+*.dll
+*.pdb

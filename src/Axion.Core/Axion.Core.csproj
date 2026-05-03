@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <AssemblyName>Axion.Core</AssemblyName>
+    <RootNamespace>Axion.Core</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Text.Json" Version="8.0.5" />
+  </ItemGroup>
+  <ItemGroup>
+    <InternalsVisibleTo Include="Axion.Engine" />
+    <InternalsVisibleTo Include="Axion.Editor" />
+    <InternalsVisibleTo Include="Axion.Rendering" />
+    <InternalsVisibleTo Include="Axion.Physics" />
+    <InternalsVisibleTo Include="Axion.Scripting" />
+  </ItemGroup>
+</Project>

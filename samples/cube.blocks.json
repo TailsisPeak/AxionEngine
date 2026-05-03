@@ -1,0 +1,55 @@
+[
+  {
+    "kind": "var",
+    "fields": { "name": "speed" },
+    "args": [ { "kind": "num", "fields": { "value": "90.0" } } ]
+  },
+  {
+    "kind": "func",
+    "fields": { "name": "start", "params": [] },
+    "body": [
+      {
+        "kind": "call",
+        "fields": { "callee": "print" },
+        "args": [
+          {
+            "kind": "binop",
+            "fields": { "op": "+" },
+            "args": [
+              { "kind": "str", "fields": { "value": "cube spawned at " } },
+              { "kind": "var-ref", "fields": { "name": "Transform.Position" } }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "kind": "func",
+    "fields": { "name": "loop", "params": [] },
+    "body": [
+      {
+        "kind": "call",
+        "fields": { "callee": "Transform.Rotate" },
+        "args": [
+          {
+            "kind": "call",
+            "fields": { "callee": "Vec.V" },
+            "args": [
+              { "kind": "num", "fields": { "value": "0" } },
+              {
+                "kind": "binop",
+                "fields": { "op": "*" },
+                "args": [
+                  { "kind": "var-ref", "fields": { "name": "speed" } },
+                  { "kind": "var-ref", "fields": { "name": "Time.DeltaTime" } }
+                ]
+              },
+              { "kind": "num", "fields": { "value": "0" } }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
